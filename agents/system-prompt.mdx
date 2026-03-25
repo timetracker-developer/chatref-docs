@@ -1,0 +1,116 @@
+---
+title: System Prompt
+description: Define your chatbot's personality, tone, and rules with a custom system prompt.
+---
+
+# System Prompt
+
+The **system prompt** is a set of instructions that tells your chatbot how to behave. Think of it as your chatbot's "personality guide" — it defines the tone, rules, and boundaries for every conversation.
+
+## What Is a System Prompt?
+
+A system prompt is a message that your chatbot reads before every conversation. It shapes how the chatbot responds to visitors. For example, you can tell it to:
+
+- Be formal or casual
+- Only answer questions about specific topics
+- Always greet users in a certain way
+- Avoid discussing certain subjects
+- Respond in a specific format
+
+## How to Set a System Prompt
+
+<Steps>
+  <Step title="Open your agent's Settings">
+    Go to the **Settings** tab for your agent.
+  </Step>
+  <Step title="Find the System Prompt section">
+    You'll see a text area labeled **System Prompt** along with template options.
+  </Step>
+  <Step title="Choose a template or write your own">
+    You can start with the default **AI Agent** template and customize it, or write your own from scratch.
+  </Step>
+  <Step title="Save your changes">
+    Click **Save** to apply the new system prompt.
+  </Step>
+</Steps>
+
+## Default Template
+
+Chatref includes a built-in **AI Agent** template that works well for most use cases. It instructs the chatbot to be helpful, polite, and focused on the knowledge base content.
+
+## Writing an Effective System Prompt
+
+Here are some tips for crafting a great system prompt:
+
+### Define the role
+Tell the chatbot who it is:
+> "You are a friendly customer support agent for Acme Corp, a company that sells outdoor gear."
+
+### Set the tone
+Specify how it should communicate:
+> "Respond in a professional but approachable tone. Use simple language and avoid jargon."
+
+### Set boundaries
+Tell the chatbot what it should and shouldn't do:
+> "Only answer questions related to our products and services. If asked about competitors, politely redirect the conversation."
+
+### Provide context
+Give helpful background information:
+> "Our most popular products are hiking boots, camping tents, and backpacks. Our return policy allows returns within 30 days."
+
+### Add formatting rules
+Control how responses look:
+> "Keep responses concise — no more than 3 paragraphs. Use bullet points for lists."
+
+## Example System Prompts
+
+### Customer Support Bot
+```
+You are a helpful customer support agent for TechStore. You assist customers
+with product questions, order status, returns, and general inquiries.
+
+Rules:
+- Be friendly and professional
+- If you don't know the answer, say so honestly and suggest contacting
+  support@techstore.com
+- Keep responses concise and helpful
+- Never make up information about products or policies
+```
+
+### Product Recommendation Bot
+```
+You are a product advisor for FashionBrand. Help visitors find the right
+products based on their preferences, size, and budget.
+
+Guidelines:
+- Ask clarifying questions to understand what the customer is looking for
+- Recommend specific products from our catalog
+- Mention current promotions when relevant
+- Be enthusiastic but not pushy
+```
+
+### FAQ Bot
+```
+You are an FAQ assistant for CloudApp. Answer questions about our software
+using only the information in your knowledge base.
+
+Important:
+- Stick to the facts in your training data
+- If a question isn't covered in your knowledge base, let the user know
+  and suggest they check our help center
+- Provide step-by-step instructions when explaining how to do something
+- Use a friendly, helpful tone
+```
+
+<Tip>
+Test your system prompt in the [Playground](/agents/playground) before going live. Try asking tricky or edge-case questions to make sure the chatbot behaves as expected.
+</Tip>
+
+## When to Update Your System Prompt
+
+Consider updating your system prompt when:
+
+- Your chatbot gives responses that don't match your brand voice
+- Visitors ask questions that the chatbot handles poorly
+- You add new products, services, or policies
+- You want to change the chatbot's personality or focus

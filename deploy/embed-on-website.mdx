@@ -1,0 +1,91 @@
+---
+title: Embed on Your Website
+description: Add your Chatref chatbot to any website with a simple code snippet.
+---
+
+# Embed on Your Website
+
+Once your chatbot is set up and tested, you can add it to your website by pasting a simple code snippet. The chat widget will appear as a floating button in the corner of your page.
+
+## Getting Your Embed Code
+
+<Steps>
+  <Step title="Open the Deploy tab">
+    Go to your agent's dashboard and click the **Deploy** tab.
+  </Step>
+  <Step title="Copy your embed code">
+    You'll see a ready-to-use code snippet. Click the **Copy** button to copy it to your clipboard.
+  </Step>
+  <Step title="Paste into your website">
+    Add the code snippet to your website, just before the closing `</body>` tag on every page where you want the chatbot to appear.
+  </Step>
+</Steps>
+
+## The Embed Code
+
+Your embed code looks something like this:
+
+```html
+<script
+  src="https://widget.chatref.com/widget.js"
+  data-chatref-token="your-unique-token-here"
+  async>
+</script>
+```
+
+The `data-chatref-token` value is unique to your agent — it tells Chatref which chatbot to load.
+
+## Where to Place the Code
+
+Add the embed code just before the closing `</body>` tag in your website's HTML. This ensures the widget loads after your page content, keeping your site fast.
+
+### Common Platforms
+
+**HTML websites:**
+Paste the code directly into your HTML file before `</body>`.
+
+**WordPress:**
+Add the code to your theme's footer, or use a plugin that lets you add custom scripts to the footer area.
+
+**Shopify:**
+Go to Online Store > Themes > Edit Code, and add the snippet to your `theme.liquid` file before `</body>`.
+
+**Squarespace:**
+Go to Settings > Advanced > Code Injection, and paste the code in the Footer section.
+
+**Wix:**
+Use the Custom Code feature under Settings > Advanced to add the snippet.
+
+**React / Next.js:**
+Add the script tag to your root layout or use a Script component to load it.
+
+## Your API Key and Secret
+
+The Deploy tab also shows your **API Key** and **Secret** for this agent. These are used for:
+
+- Embedding the chatbot on your website
+- API integrations
+- Widget configuration
+
+<Warning>
+Keep your API secret private. Do not share it publicly or expose it in client-side code beyond the embed snippet. If you believe your secret has been compromised, you can regenerate it from the Deploy tab.
+</Warning>
+
+## Testing the Embed
+
+After adding the code to your website:
+
+1. Visit your website in a browser
+2. Look for the chat bubble button in the bottom-right corner
+3. Click it to open the chat widget
+4. Send a test message to make sure everything works
+
+<Tip>
+If the widget doesn't appear, check your browser's developer console for errors. Common issues include incorrect token values or the script being blocked by content security policies.
+</Tip>
+
+## Multiple Pages
+
+The chatbot will appear on every page that includes the embed code. If you only want it on certain pages, add the code only to those specific pages.
+
+For more advanced setups with different chatbots on different pages, see [Multi-Agent Routing](/deploy/multi-agent-routing).

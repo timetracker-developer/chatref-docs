@@ -1,0 +1,77 @@
+---
+title: Agent Settings
+description: Configure your chatbot's AI behavior, language, response style, and more.
+---
+
+# Agent Settings
+
+The Settings tab lets you fine-tune how your chatbot behaves, what language it uses, and how creative its responses are.
+
+## AI Model
+
+Chatref uses **frontier AI models** to power your chatbot's responses. These are among the most advanced AI models available, designed to understand natural language and provide helpful, accurate answers based on your training data.
+
+You can select which model your agent uses from the **Model** dropdown in Settings. Different models may vary in speed and response quality.
+
+<Info>
+You don't need to understand how AI models work to use Chatref. The default model works great for most use cases.
+</Info>
+
+## Temperature
+
+The **Temperature** setting controls how creative or focused your chatbot's responses are. It's a slider from 0 to 1.
+
+| Setting | Value | Best For |
+|---------|-------|----------|
+| **Low** (0 - 0.3) | More focused and consistent | Factual answers, technical support, precise information |
+| **Medium** (0.4 - 0.7) | Balanced | General customer support, product questions |
+| **High** (0.8 - 1.0) | More creative and varied | Creative writing, brainstorming, casual conversation |
+
+The default value is **0.7**, which works well for most chatbots. If your chatbot needs to give very precise, consistent answers (like pricing or technical specs), try lowering the temperature.
+
+<Tip>
+Use the [Playground](/agents/playground) to test different temperature values and see how they affect your chatbot's responses before going live.
+</Tip>
+
+## Response Length
+
+The **Max Tokens** setting controls how long your chatbot's responses can be. A higher value allows longer, more detailed answers. The default is **2000**, which allows for comprehensive responses while keeping them readable.
+
+- Lower the value if you want shorter, more concise answers
+- Raise it if your chatbot needs to provide detailed explanations
+
+## Language
+
+Chatref supports **11 languages** for the chat widget interface. When you select a language, the widget's built-in text (buttons, placeholders, etc.) appears in that language.
+
+Supported languages:
+
+| Language | Code |
+|----------|------|
+| English | en |
+| Spanish | es |
+| French | fr |
+| German | de |
+| Dutch | nl |
+| Danish | da |
+| Portuguese | pt |
+| Arabic | ar |
+| Chinese | zh |
+| Japanese | ja |
+| Hindi | hi |
+
+<Info>
+The language setting affects the widget interface text. Your chatbot's AI responses will naturally adapt to the language your visitors use in their messages.
+</Info>
+
+## Agent Description
+
+Add a description to help you remember what each agent is for. This is only visible to you in the dashboard — visitors won't see it.
+
+## Avatar
+
+Upload a custom avatar image for your agent. This appears in the chat widget next to your chatbot's messages, giving it a more personal feel.
+
+## Saving Changes
+
+After adjusting any settings, always click **Save** to apply your changes. Changes take effect immediately for new conversations.

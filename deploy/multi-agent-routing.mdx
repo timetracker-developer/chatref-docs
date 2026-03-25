@@ -1,0 +1,85 @@
+---
+title: Multi-Agent Routing
+description: Show different chatbots on different pages of your website with display rules.
+---
+
+# Multi-Agent Routing
+
+<Info>
+Multi-agent routing is available on **Plus** and **Pro** plans. [Compare plans](/billing/plans-and-pricing)
+</Info>
+
+Multi-agent routing lets you use a single embed code across your entire website while automatically showing different chatbots on different pages. For example, you could have a sales bot on your pricing page and a support bot on your help center.
+
+## How It Works
+
+Instead of embedding individual agent codes on each page, you use a **workspace-level embed code**. Then you set up **display rules** that tell Chatref which agent to show based on the URL of the page the visitor is on.
+
+## Setting Up Multi-Agent Routing
+
+<Steps>
+  <Step title="Go to the Deploy tab">
+    Navigate to the **Deploy** section from your workspace settings.
+  </Step>
+  <Step title="Get the workspace embed code">
+    Copy the workspace-level embed secret. This single code works across your entire website.
+  </Step>
+  <Step title="Set up display rules">
+    Configure rules that match URL patterns to specific agents. For example:
+    - `/pricing*` → Sales Bot
+    - `/help*` → Support Bot
+    - `/products*` → Product Advisor
+  </Step>
+  <Step title="Set a default agent">
+    Choose which agent appears on pages that don't match any display rule.
+  </Step>
+  <Step title="Enable display rules">
+    Toggle display rules on and save your configuration.
+  </Step>
+</Steps>
+
+## Display Rules
+
+Display rules use **URL pattern matching** to determine which agent to show. You define a URL pattern and assign it to an agent.
+
+### URL Pattern Examples
+
+| Pattern | Matches |
+|---------|---------|
+| `/pricing` | Exactly the pricing page |
+| `/pricing*` | The pricing page and any sub-pages |
+| `/help/*` | Any page under the /help/ section |
+| `/products/shoes*` | Any page in the shoes category |
+
+### How Rules Are Evaluated
+
+When a visitor loads a page on your website:
+
+1. Chatref checks the page URL against your display rules (in order)
+2. If a rule matches, the assigned agent is loaded
+3. If no rules match, the **default agent** is loaded
+
+## Use Cases
+
+### E-commerce with multiple departments
+- Product pages → Product Advisor bot
+- Help/support section → Customer Support bot
+- Checkout pages → Order Assistance bot
+
+### SaaS with different audiences
+- Marketing pages → Lead Generation bot
+- Documentation → Technical Support bot
+- Pricing page → Sales bot
+
+### Multi-language websites
+- `/en/*` → English-speaking agent
+- `/es/*` → Spanish-speaking agent
+- `/fr/*` → French-speaking agent
+
+<Tip>
+Start simple with 2-3 rules and expand as needed. Make sure your default agent is a good catch-all for pages that don't match any specific rule.
+</Tip>
+
+## Single Embed Code Advantage
+
+The biggest benefit of multi-agent routing is that you only need **one embed code** on your entire website. Add it once to your site's template or layout, and Chatref handles the rest based on your display rules. No need to manage different code snippets on different pages.

@@ -1,0 +1,70 @@
+---
+title: Custom Actions Overview
+description: Create interactive forms, buttons, and webhooks that your chatbot can trigger during conversations.
+---
+
+# Custom Actions
+
+**Custom actions** let you add interactive elements to your chatbot conversations. Instead of just answering questions, your chatbot can collect information through forms, offer clickable buttons, or trigger external systems via webhooks.
+
+## Types of Custom Actions
+
+<CardGroup cols={3}>
+  <Card title="Form Actions" icon="rectangle-list" href="/custom-actions/form-actions">
+    Collect structured information from visitors using custom forms with fields like name, email, phone, and more.
+  </Card>
+  <Card title="Button Actions" icon="square-mouse-pointer" href="/custom-actions/button-actions">
+    Add clickable buttons that visitors can press to trigger specific actions or navigate to links.
+  </Card>
+  <Card title="API / Webhook Actions" icon="webhook" href="/custom-actions/api-webhook-actions">
+    Connect your chatbot to external systems by sending data to webhooks when actions are triggered.
+  </Card>
+</CardGroup>
+
+## Why Use Custom Actions
+
+Custom actions turn your chatbot from a simple Q&A tool into an interactive assistant that can:
+
+- **Collect leads** — Gather visitor contact information through forms
+- **Book appointments** — Present scheduling options and collect booking details
+- **Create support tickets** — Automatically send conversation data to your helpdesk
+- **Process orders** — Connect to your order management system
+- **Trigger workflows** — Kick off automated processes in tools like N8N or Zapier
+
+## How to Create a Custom Action
+
+<Steps>
+  <Step title="Go to Custom Actions">
+    Open your agent's dashboard and click the **Custom Actions** tab.
+  </Step>
+  <Step title="Click Create Action">
+    Click the button to create a new custom action.
+  </Step>
+  <Step title="Choose the action type">
+    Select whether you want a Form, Button, or API/Webhook action.
+  </Step>
+  <Step title="Configure the action">
+    Fill in the details specific to your chosen action type (fields, labels, endpoints, etc.).
+  </Step>
+  <Step title="Save">
+    Save your action. It's now available for your chatbot to use in conversations.
+  </Step>
+</Steps>
+
+## Managing Custom Actions
+
+From the Custom Actions tab, you can:
+
+- **View all actions** — See a list of all your custom actions organized by type
+- **Edit actions** — Update configuration, fields, or endpoints
+- **Enable/Disable** — Toggle actions on or off without deleting them
+- **Delete actions** — Remove actions you no longer need
+- **View submissions** — See data collected from form submissions and action triggers
+
+## Tracking Submissions
+
+Every time a visitor interacts with a custom action (fills out a form, clicks a button, or triggers a webhook), it creates a **submission** record. You can view all submissions from the Custom Actions tab to see:
+
+- What data was collected
+- When the action was triggered
+- Which conversation it came from

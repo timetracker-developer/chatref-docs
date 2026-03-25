@@ -1,0 +1,83 @@
+---
+title: API / Webhook Actions
+description: Connect your chatbot to external systems with webhook integrations.
+---
+
+# API / Webhook Actions
+
+**API webhook actions** let your chatbot send data to external systems when triggered. This connects your chatbot to your existing tools — like CRMs, helpdesks, email marketing platforms, or custom applications.
+
+## When to Use Webhooks
+
+Webhook actions are ideal for:
+
+- **CRM integration** — Send lead information directly to your CRM when visitors fill out forms
+- **Ticket creation** — Automatically create support tickets in your helpdesk system
+- **Email alerts** — Trigger email notifications when specific events happen
+- **Custom workflows** — Connect to automation platforms like N8N or Zapier
+- **Data sync** — Push conversation data to your analytics or data warehouse
+
+## Creating a Webhook Action
+
+<Steps>
+  <Step title="Go to Custom Actions">
+    Open your agent's dashboard and click the **Custom Actions** tab.
+  </Step>
+  <Step title="Create a new action">
+    Click **Create Action** and select **API / Webhook** as the type.
+  </Step>
+  <Step title="Configure the webhook">
+    Enter the details for your webhook:
+    - **Webhook URL** — The endpoint that will receive the data
+    - **Headers** — Any custom headers required by your endpoint (like API keys)
+    - **Retry settings** — How many times to retry if the webhook fails
+  </Step>
+  <Step title="Save">
+    Save your webhook action.
+  </Step>
+</Steps>
+
+## How Webhooks Work
+
+When a webhook action is triggered during a conversation:
+
+1. Chatref collects the relevant data (form fields, conversation context, etc.)
+2. The data is sent as a request to your specified webhook URL
+3. Your external system receives the data and processes it
+4. If the request fails, Chatref retries according to your retry settings
+
+## Setting Up Your Endpoint
+
+Your webhook endpoint should be a URL that can receive incoming data. Most platforms provide webhook URLs you can use:
+
+- **Zapier** — Create a Zap with a "Webhooks" trigger to get a URL
+- **N8N** — Use a Webhook node to receive data
+- **Custom server** — Set up an endpoint on your own server
+
+## Custom Headers
+
+If your endpoint requires authentication or special headers, you can add them in the webhook configuration. Common examples:
+
+- `Authorization: Bearer your-api-key`
+- `Content-Type: application/json`
+- Custom API keys or tokens
+
+<Warning>
+Keep your webhook URLs and API keys secure. If your webhook endpoint handles sensitive data, make sure it uses HTTPS and has proper authentication.
+</Warning>
+
+## Retry Settings
+
+Configure how many times Chatref should retry sending data if the webhook fails. This helps ensure data delivery even if your endpoint has temporary issues.
+
+## Viewing Webhook Activity
+
+Track all webhook triggers from the Custom Actions tab. You can see:
+
+- When each webhook was triggered
+- The data that was sent
+- Whether the request succeeded or failed
+
+<Tip>
+Test your webhook with a service like webhook.site first to make sure the data format is correct before connecting it to your production systems.
+</Tip>

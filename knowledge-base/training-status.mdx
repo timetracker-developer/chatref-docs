@@ -1,0 +1,67 @@
+---
+title: Training Status
+description: Understand the training status of your knowledge base sources and troubleshoot issues.
+---
+
+# Training Status
+
+Every piece of content you add to your knowledge base goes through a processing pipeline. The training status tells you where each source is in that process.
+
+## Status Types
+
+| Status | Meaning |
+|--------|---------|
+| **Pending** | Your content has been submitted and is waiting to be processed |
+| **Processing** | Chatref is actively reading and processing your content |
+| **Completed** | Processing is finished and your chatbot can now use this content |
+| **Failed** | Something went wrong during processing |
+
+## How Long Does Processing Take?
+
+Processing time depends on the type and size of your content:
+
+- **Text** — Usually completes within a few seconds
+- **Small files** (a few pages) — Typically a minute or less
+- **Large files** (many pages) — May take several minutes
+- **Website URLs** — Usually a minute or less, depending on page size
+
+The Knowledge Base tab automatically refreshes every few seconds to show you the latest status.
+
+## What to Do When Training Completes
+
+Once a source shows **Completed**, your chatbot can immediately use that content. You can verify by:
+
+1. Opening the [Playground](/agents/playground)
+2. Asking a question related to the newly added content
+3. Checking that the chatbot references the correct information
+
+## Troubleshooting Failed Training
+
+If a source shows **Failed**, try these steps:
+
+### For Files
+- **Check the file format** — Make sure it's a supported format (PDF or document)
+- **Check file quality** — Scanned images without text layers may not process correctly
+- **Re-upload** — Try uploading the file again
+- **Convert and retry** — Save the file in a different format and try again
+
+### For Websites
+- **Check the URL** — Make sure the URL is correct and the page is publicly accessible
+- **Check for access restrictions** — Pages behind login walls or paywalls cannot be crawled
+- **Try again** — Temporary server issues can cause failures; try re-adding the URL
+
+### For Text
+- **Check the content** — Make sure the text isn't empty or just whitespace
+- **Re-submit** — Delete the failed source and create a new one with the same content
+
+<Warning>
+If a source repeatedly fails to process, the content may not be compatible. Try reformatting the content or using a different source type. For example, if a PDF keeps failing, try copying the text content and adding it as a Text source instead.
+</Warning>
+
+## Monitoring Multiple Sources
+
+When you upload several files or add multiple URLs at once, each source is processed independently. You can track the status of each one in the Knowledge Base tab. The page updates automatically, so you don't need to refresh manually.
+
+<Tip>
+After adding a large batch of content, wait for all sources to show **Completed** before testing in the Playground. This ensures your chatbot has access to all the new information.
+</Tip>
