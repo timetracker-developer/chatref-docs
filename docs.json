@@ -12,72 +12,79 @@
     "light": "#3291ff",
     "dark": "#0050b3"
   },
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction",
-        "quickstart"
-      ]
-    },
-    {
-      "group": "Agents",
-      "pages": [
-        "agents/creating-an-agent",
-        "agents/agent-settings",
-        "agents/system-prompt",
-        "agents/playground"
-      ]
-    },
-    {
-      "group": "Knowledge Base",
-      "pages": [
-        "knowledge-base/overview",
-        "knowledge-base/training-with-files",
-        "knowledge-base/training-with-websites",
-        "knowledge-base/training-with-text",
-        "knowledge-base/training-status"
-      ]
-    },
-    {
-      "group": "Widget Customization",
-      "pages": [
-        "widget/appearance",
-        "widget/quick-actions",
-        "widget/suggested-messages",
-        "widget/help-menu"
-      ]
-    },
-    {
-      "group": "Deploy & Embed",
-      "pages": [
-        "deploy/embed-on-website",
-        "deploy/multi-agent-routing"
-      ]
-    },
-    {
-      "group": "Inbox",
-      "pages": [
-        "inbox/conversations",
-        "inbox/human-handoff"
-      ]
-    },
-    {
-      "group": "Custom Actions",
-      "pages": [
-        "custom-actions/overview",
-        "custom-actions/form-actions",
-        "custom-actions/button-actions",
-        "custom-actions/api-webhook-actions"
-      ]
-    },
-    {
-      "group": "Billing & Usage",
-      "pages": [
-        "billing/coins-explained",
-        "billing/plans-and-pricing",
-        "billing/managing-your-subscription"
-      ]
-    }
-  ]
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Agents",
+            "pages": [
+              "agents/creating-an-agent",
+              "agents/agent-settings",
+              "agents/system-prompt",
+              "agents/playground"
+            ]
+          },
+          {
+            "group": "Knowledge Base",
+            "pages": [
+              "knowledge-base/overview",
+              "knowledge-base/training-with-files",
+              "knowledge-base/training-with-websites",
+              "knowledge-base/training-with-text",
+              "knowledge-base/training-status"
+            ]
+          },
+          {
+            "group": "Widget Customization",
+            "pages": [
+              "widget/appearance",
+              "widget/quick-actions",
+              "widget/suggested-messages",
+              "widget/help-menu"
+            ]
+          },
+          {
+            "group": "Deploy & Embed",
+            "pages": [
+              "deploy/embed-on-website",
+              "deploy/multi-agent-routing"
+            ]
+          },
+          {
+            "group": "Inbox",
+            "pages": [
+              "inbox/conversations",
+              "inbox/human-handoff"
+            ]
+          },
+          {
+            "group": "Custom Actions",
+            "pages": [
+              "custom-actions/overview",
+              "custom-actions/form-actions",
+              "custom-actions/button-actions",
+              "custom-actions/api-webhook-actions"
+            ]
+          },
+          {
+            "group": "Billing & Usage",
+            "pages": [
+              "billing/coins-explained",
+              "billing/plans-and-pricing",
+              "billing/managing-your-subscription"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
